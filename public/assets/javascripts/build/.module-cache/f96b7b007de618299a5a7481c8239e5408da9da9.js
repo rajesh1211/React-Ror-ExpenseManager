@@ -24,7 +24,9 @@ var Form = React.createClass({displayName: "Form",
     }  
   },
   componentDidMount: function() {
-    $("#datepicker").datepicker();
+    $("#datepicker").datepicker(
+      dateFormat: "yy-mm-dd"
+    );
   },
   validateForm: function (params) {
     if (params.date == null || params.date == "") {

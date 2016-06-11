@@ -6,7 +6,7 @@ class ExpensesController < ApplicationController
       render json: expenses.to_json, status: :ok
     rescue => e
       logger.error "Exception: #{e.message}"
-      render json: {message: 'Something wnt wrong'} , status: :internal_server_error
+      render json: {message: 'Something went wrong'} , status: :internal_server_error
     end  
   end  
 
@@ -16,7 +16,7 @@ class ExpensesController < ApplicationController
       render json: expense.to_json, status: :ok
     rescue => e
       logger.error "Exception: #{e.message}"
-      render json: {message: 'Something wnt wrong'} , status: :internal_server_error
+      render json: {message: 'Something went wrong'} , status: :internal_server_error
     end  
   end  
 
@@ -32,7 +32,7 @@ class ExpensesController < ApplicationController
       render json: expense.to_json , status: :ok
     rescue => e
       logger.error "Exception: #{e.message}"
-      render json: {message: 'Something wnt wrong'} , status: :internal_server_error
+      render json: {message: 'Something went wrong'} , status: :internal_server_error
     end    
   end
 
@@ -48,7 +48,7 @@ class ExpensesController < ApplicationController
       render json: expense.to_json , status: :ok
     rescue => e
       logger.error "Exception: #{e.message}"
-      render json: {message: 'Something wnt wrong'} , status: :internal_server_error
+      render json: {message: 'Something went wrong'} , status: :internal_server_error
     end    
   end
 
@@ -59,7 +59,7 @@ class ExpensesController < ApplicationController
       render json: {message: 'expense deleted successfully'}, status: :ok
     rescue => e
       logger.error "Exception: #{e.message}"
-      render json: {message: 'Something wnt wrong'} , status: :internal_server_error
+      render json: {message: 'Something went wrong'} , status: :internal_server_error
     end    
   end
 

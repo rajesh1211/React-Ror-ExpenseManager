@@ -26,7 +26,9 @@ var Row = React.createClass({displayName: "Row",
     }  
   },
   componentDidUpdate: function() {
-    $("#date"+this.props.id).datepicker();
+    $("#date"+this.props.id).datepicker({
+      dateFormat: "yy-mm-dd"
+    });
   },
   cancelUpdate: function () {
     this.setState({editRow: false});
