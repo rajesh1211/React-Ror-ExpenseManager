@@ -15,4 +15,9 @@ Simple expense manger to keep track of your expenses, built on React and Ruby on
   6. JS library jquery
   7. Task manager gulp
 
+## Steps to run:
+  1. clone the repository
+  2. run bundle
+  3. rake db:migrate
+  4. rails server
 
