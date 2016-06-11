@@ -8,10 +8,11 @@ Simple expense manger to keep track of your expenses, built on React and Ruby on
 
 ## Dependencies:
   1. Backend Framework Ruby on Rails
-  2. Frontend JS Framework React
-  3. CSS Framework Bootstrap
-  3. CSS Preprocessor Bootstrap
-  4. JS library jquery
-  5. Task manager gulp
+  2. Testing Framework RSpec
+  3. Frontend JS Framework React
+  4. CSS Framework Bootstrap
+  5. CSS Preprocessor Bootstrap
+  6. JS library jquery
+  7. Task manager gulp
 
 
