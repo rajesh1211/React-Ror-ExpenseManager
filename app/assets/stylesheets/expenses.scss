@@ -1,0 +1,36 @@
+@import 'reset';
+@import 'utilities';
+@import 'summary';
+@import 'add-record-form';
+@import 'record-table';
+@import 'confirm';
+@import 'response-message';
+
+html {
+  font-size: 100%;
+  font-family: $font-family;
+}
+
+h1{
+  font-size: 2.1em;
+  color: #4d4d4d;
+  text-align: center;
+  &.page-heading {
+    margin: 30px;
+    font-weight: 600;
+  }
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+
+.expense-content {
+  width: 80%;
+  margin: auto;
+}

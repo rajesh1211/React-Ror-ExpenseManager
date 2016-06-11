@@ -1,0 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif, "Helvetica Neue", Helvetica, Arial !important; }
+
+h1 {
+  font-size: 2.1em;
+  color: #4d4d4d;
+  text-align: center; }
+  h1.page-heading {
+    margin: 30px;
+    font-weight: 600; }
+
+.main-wrapper {
+  width: 100%;
+  max-width: 890px;
+  margin: auto; }
+
+.expense {
+  width: 100%; }
+
+.summary {
+  text-align: center; }
+
+.tile, .credit, .debit, .balance {
+  display: inline-block;
+  width: 150px;
+  padding: 10px; }
+  .tile .tile-data, .credit .tile-data, .debit .tile-data, .balance .tile-data {
+    border-radius: 4px; }
+  .tile:first-child, .credit:first-child, .debit:first-child, .balance:first-child {
+    margin-left: 0px; }
+  .tile:last-child, .credit:last-child, .debit:last-child, .balance:last-child {
+    margin-right: 0px; }
+  .tile .tile-heading, .credit .tile-heading, .debit .tile-heading, .balance .tile-heading {
+    height: 24px;
+    text-align: left;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 5px; }
+  .tile .tile-content, .credit .tile-content, .debit .tile-content, .balance .tile-content {
+    height: 24px;
+    text-align: left;
+    padding: 5px;
+    line-height: 24px;
+    font-size: 14px; }
+
+.credit > .tile-data {
+  border: solid 1px #eef6e8; }
+
+.credit .tile-heading {
+  background-color: #dff0d8;
+  color: #626f59; }
+
+.debit > .tile-data {
+  border: solid 1px #f5eff0; }
+
+.debit .tile-heading {
+  background-color: #f2dede;
+  color: #8e4b56; }
+
+.balance > .tile-data {
+  border: solid 1px #edf5f6; }
+
+.balance .tile-heading {
+  background-color: #d9edf7;
+  color: #4f6f73;
+  height: 24px; }
+
+.form {
+  width: 42%;
+  text-align: center;
+  margin: auto; }
+  .form .form-control {
+    width: 120px;
+    padding: 4px;
+    border-radius: 3px; }
+
+.btn {
+  width: 100px;
+  padding: 5px; }
+  .btn.btn-primary {
+    background-color: #7ba9d0;
+    color: white; }
+

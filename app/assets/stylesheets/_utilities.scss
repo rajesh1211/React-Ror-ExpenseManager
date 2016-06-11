@@ -1,0 +1,32 @@
+// colors
+$bg-green: #dff0d8;
+$bg-red: #f2dede;
+$bg-blue: #d9edf7;
+$white: #ffffff;
+$gray: #333333;
+$color-danger: #d9534f;
+// RESPOND TO MIXIN
+$break-xs: 480px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+
+$landscape: 'landscape';
+$portrait: 'portrait';
+
+@mixin respond-to($point) {
+  @if $point == xs {
+    @media screen and (max-width : $break-xs ) { @content; }
+  }
+  @else if $point == sm {
+    @media screen and (max-width : $break-sm ) { @content; }
+  }
+  @else if $point == md {
+    @media screen and (max-width : $break-md ) { @content; }
+  }
+  @else if $point == lg {
+    @media screen and (max-width : $break-lg ) { @content; }
+  }
+}
+
+$font-family: 'Source Sans Pro', sans-serif,"Helvetica Neue",Helvetica,Arial !important;

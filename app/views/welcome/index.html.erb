@@ -1,0 +1,80 @@
+<!DOCTYPE>
+
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <!--[if IE]>
+        <script src="bower_components/better-dom/dist/better-dom-legacy.js"></script>
+    <![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/assets/stylesheets/styles.css">
+
+    <script src="/assets/javascripts/vendor/jquery.min.js"></script>
+    <script src="/assets/javascripts/vendor/react.min.js"></script>
+    <script src="/assets/javascripts/vendor/react-dom.js"></script>
+    <script src="/assets/javascripts/vendor/jquery-ui.min.js"></script>
+    <!--
+      Used for development purpose
+    <script src="/assets/javascripts/vendor/JSXTransformer.js"></script>
+    -->    
+    <title>React/Rails Expenses</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="page-heading">React/Rails Expenses</h1>    
+        <div id="expense-container" class="expense-content"></div>
+      </div>
+    </main>
+    <link rel="stylesheet" async="true" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700">
+    <div class="confirm-modal" id="confirmBox">
+      <div class="confirm-box">
+        <div class="confirm-msg">
+          
+        </div>
+        <div class="confirm-actions">
+          <button class="btn btn-default btn-sm" id="btnCnfrmCancel" 
+                  onClick="confirm.confirmCancel()">
+            Cancel
+          </button>
+          <button class="btn btn-danger btn-sm" id="btnCnfrmSubmit" onClick="confirm.submit()">
+            Submit
+          </button>
+        </div>
+        <div class="alert-actions">
+          <button class="btn btn-danger btn-sm" id="btnCnfrmCancel" 
+                  onClick="confirm.submit()">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="response-message" id="responseMessage">
+      Data Saved Successfully
+    </div>
+
+    <script src="/assets/javascripts/application.js"></script>
+      
+    <!--
+      Used for development purpose
+      <script type= "text/jsx" src="/assets/javascripts/src/tile.js"></script>
+      <script type= "text/jsx" src="/assets/javascripts/src/row.js"></script>
+      <script type= "text/jsx" src="/assets/javascripts/src/table.js"></script>
+      <script type= "text/jsx" src="/assets/javascripts/src/form.js"></script>
+      <script type= "text/jsx" src="/assets/javascripts/src/summary.js"></script>
+      <script type= "text/jsx" src="/assets/javascripts/src/expense.js"></script>
+      <script type= "text/jsx" src="/assets/javascripts/src/main.js"></script>
+      
+      <script src="/assets/javascripts/build/confirm.js"></script>
+      <script src="/assets/javascripts/build/responseMessage.js"></script>
+    -->
+    
+    
+  </body>
+  
+
+</html>

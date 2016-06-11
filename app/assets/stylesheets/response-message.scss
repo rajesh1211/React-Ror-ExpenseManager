@@ -1,0 +1,19 @@
+.response-message {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;  
+  line-height: 50px;
+  display: none;
+
+  &.success {
+    background: #61af41;
+  }
+
+  &.error {
+    background: #d9534f;
+  }
+}

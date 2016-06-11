@@ -1,0 +1,61 @@
+@import "utilities";
+.form-control {
+    
+}
+
+.btn {
+  font-size: .8em;
+  padding: 10px;
+  border-radius: 4px;
+
+  &+.btn {
+    margin-left: 10px; 
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.btn-primary {
+    background: darken($bg-blue,40%);
+    border: 1px solid darken($bg-blue, 20%);
+    color: $white;
+  }
+
+  &.btn-default {
+    background: $white;
+    border: 1px solid lighten($gray,40%)
+  }
+
+  &.btn-danger {
+    background: $color-danger;
+    color: $white;
+    border: 1px solid $color-danger;
+  }
+
+  @include respond-to('sm') {
+    margin: 0 0 5px 0; 
+    &+.btn {
+      margin: 0 0 5px 0; 
+    }
+    width: 100%;
+  }
+  
+  .active-txt {
+    display: block;
+  }
+
+  .disabled-txt {
+    display: none;
+  }
+
+  &.disabled {
+    .active-txt {
+      display: none;
+    }
+
+    .disabled-txt {
+      display: block;
+    }
+  }
+}
