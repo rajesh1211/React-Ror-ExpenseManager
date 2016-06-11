@@ -1,7 +1,7 @@
 # React-Ror-ExpenseManager
 Simple expense manger to keep track of your expenses, built on React and Ruby on Rails
 
-![ExpenseManager](/app_screenshot.png?raw=true "ExpenseManager")
+![ExpenseManager](/public/app_screenshot.png?raw=true "ExpenseManager")
 
 ## Features:
   1. Get your expense summary at top
