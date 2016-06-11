@@ -22,4 +22,5 @@ Simple expense manger to keep track of your expenses, built on React and Ruby on
   2. run bundle
   3. rake db:migrate
   4. rails server
+  5. http://localhost:3000/
 
